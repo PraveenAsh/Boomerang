@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>notNeeded</title>
+<style type="text/css">
+	body{
+		font-family:'Roboto';
+		color: #000;
+		width: 350px;
+		height: 1260px;
+		background-color: #fff;
+		overflow: hidden;
+	}
+	#analysis{
+		background-color: #fff;
+		color: #2196F3;
+		width: 100px;
+		height: 30px;
+		border-radius: 15px;
+		border: 1px solid #2196F3;
+		transition: all 0.2s ease-out;
+	}
+	#analysis:hover{
+		background-color: #2196F3;
+		color: #fff;
+	}
+	#curve_chart{
+		margin-left: -30px;
+		margin-top: 0px;
+		padding-bottom: -40px;
+	}
+	#info{
+		margin-top: 120px;
+		margin-left: 10px;
+	}
+	.lay{
+		margin-left : 30px;
+		margin-top: 10px;
+	}
+</style>
+</head>
+<body>
+	<div class="btn-group lay" data-toggle="buttons">
+  <label id = "op1" class="btn btn-primary active">
+    <input type="radio" name="options" id="option1" autocomplete="off">100pts/hr
+  </label>
+  <label id = "op2" class="btn btn-primary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> 200pts/hr
+  </label>
+  <label id = "op3" class="btn btn-primary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> 500pts/hr
+  </label>
+</div>
+	<div class="inline">
+	<div id="curve_chart" style="width: 350px; height: 50px"></div>
+	<table class="table" id = 'info'></table>
+	<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=350&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=praveencn77%40gmail.com&amp;color=%2329527A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="350" height="350" frameborder="0" scrolling="no"></iframe>
+</div>
+<script src = "code.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src = "nope.js" ></script>
+</body>

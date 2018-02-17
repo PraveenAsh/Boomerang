@@ -1,0 +1,28 @@
+{
+	"name": "Boomerang",
+	"description": "The social media controller application",
+	"version": "1",
+	"manifest_version": 2,
+	"browser_action":{
+	    "default_title": "Boomerang",
+		"default_popup": "popup.html",
+		"default_icon": "./images/boomerang.png"
+	},
+	"permissions": [
+		"history",
+		"activeTab",
+		"tabs",
+		    "notifications",
+		"storage"
+	],
+	"content_scripts":[
+		{
+			"matches":["<all_urls>"],
+			"js":["contentScript.js"]
+		}
+	],
+	"background":{
+		"scripts": ["index.js","popup.js"]
+	},
+	"content_security_policy":"script-src 'self' https://www.gstatic.com/; object-src 'self'"
+}
